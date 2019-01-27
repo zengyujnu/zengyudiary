@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background8"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="50px"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:text="时间"
+            android:paddingTop="3mm" />
+
+        <View
+            android:id="@id/line"
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/diary_content_editor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_below="@id/title_line"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="13sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="normal"
+            android:lineSpacingExtra="4dp"
+            android:typeface="sans"
+            android:gravity="top"
+            android:background="@null"
+            tools:ignore="Suspicious0dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|start"
+        android:paddingLeft="3mm">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/clock" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|end"
+        android:paddingRight="3mm">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="60sp"
+            android:layout_height="50sp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/done" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
